@@ -1,11 +1,12 @@
 import java.util.Scanner;
 
 public class PersonajeBase {
-    String nombre = "Aragorn";
-    int nivel = 1;
-    double vida = 100.0;
+    String nombre = "Gandalf";
+    int nivel = 5;
+    double vida = 80;
     double vidaMaxima = 100.0;
     boolean estaVivo = true;
+    int mana = 120;
     String clase = "Guerrero";
     int puntosAtaque = 15;
     int puntosDefensa = 10;
@@ -15,6 +16,7 @@ public class PersonajeBase {
         System.out.println(p.nombre);
         System.out.println(p.nivel);
         System.out.println(p.vida);
+        System.out.println(p.nombre + " [" + p.clase + "] Nv." + p.nivel + " | Vida: " + p.vida + " | Mana: " + p.mana);
     }
 
     int ataque = 15;
